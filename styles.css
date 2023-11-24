@@ -10,6 +10,8 @@
     color: #1e1e1e;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
+    background-color: blueviolet;
+    
 }
 
 body {
@@ -24,6 +26,7 @@ img {
 header.header nav.navbar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 
 }
 
@@ -36,36 +39,59 @@ main.main .bar {
     display: flex;
     flex-direction: column;
     min-width: 100px;
-    
-    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 10vh;
+    background-color: purple;
 
 }
 
-main.main .cuadro{
-    width: 50vw;
+main.main .bar .bar-img {
+    border-radius: 50px;
+    overflow: hidden;
+    min-width: 100px;
+    object-fit: cover;
+}
+
+
+main.main .cuadro {
+    padding: 20px;
+}
+
+main.main .cuadro .track{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
 }
 
-
-main.main .cuadro .song img{
-    width: 100px;
+main.main .cuadro .track .song {
+    border-radius: 30px;
     overflow: hidden;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet;
-
-
+    background-color: purple;
 }
 
-{
-    main.main .cdere
-        display: flex;
-        flex-direction: column;
-        width: 100px;
-     
+main.main .cuadro .track .song img {
+    border-radius: 30px;
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
 }
 
- 
+main.main .cdere {
+    width: 30vw;
+}
+
+footer{
+    display: flex;
+    
+}
+
+footer.f-iz .fimg {
+    border-radius: 30px;
+}
+    
