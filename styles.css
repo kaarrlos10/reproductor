@@ -12,6 +12,7 @@
     font-weight: 400;
     /* background-color: blueviolet; */
     
+    
 }
 
 body {
@@ -38,6 +39,7 @@ main.main {
     
 }
 
+/* barra izquierda */
 main.main .bar {
     display: flex;
     flex-direction: column;
@@ -49,6 +51,14 @@ main.main .bar {
 
 }
 
+.bar .bar-svg{
+    overflow: hidden;
+    min-width: 100px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
 main.main .bar .bar-img {
     border-radius: 50px;
     overflow: hidden;
@@ -56,10 +66,19 @@ main.main .bar .bar-img {
     object-fit: cover;
 }
 
-
+/* cuadro central */
 main.main .cuadro {
     padding: 20px;
     width: 100%;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+main.main .cuadro h1{
+    font-size: 16pt;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding-bottom: 20px;
 }
 
 main.main .cuadro .track{
@@ -80,7 +99,7 @@ main.main .cuadro .track .song {
     padding-right: 1em;
     /* 
     justify-content: space-between; */
-    background-color: purple;
+    background-color: blueviolet;
 }
 main.main .cuadro .track .song img {
     border-radius: 30px;
@@ -94,11 +113,123 @@ main.main .cuadro .track .song .info {
     width: 100%;
 }
 
+.heart-play{
+    display: flex;
+    justify-content: right;
+    height: 24px;
+    width: 20px;
+}
+
+/* blque derecha */
 main.main .cdere {
-    width: 30vw;
+    width: 100%;
+    background-color: purple;
+    padding: 20px;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    
+}
+
+main.main .cdere .part-right-top{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+
+main.main .cdere .part-right-top h2{
+    font-size: 16pt;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+/* 
+main.main .cdere .part-right-top img{
+    height: 125px;
+    width: 110px;
+    align-items: center;
+    
+} */
+
+main.main .cdere .part-right-top .heart-bottom{
+    display: flex;
 }
 
 
+main.main .cdere .part-right-top .part-right-pic img{
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+
+main.main .cdere .part-right-top .part-right-list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+
+
+main.main .cdere .part-right-news{
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 30px;
+    
+    
+    
+}
+
+main.main .cdere .part-right-news h2{
+    font-size: 16pt;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+main.main .cdere .part-right-news .pic-arcangel{
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+main.main .cdere .part-right-news .pic-arcangel img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+main.main .cdere .part-right-news .pic-arcangel p{
+    font-size: 12pt;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+main.main .cdere .part-right-news .pic-drake{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main.main .cdere .part-right-news .pic-drake img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+main.main .cdere .part-right-news .pic-drake p{
+    font-size: 12pt;
+    font-weight: bold;
+    color: #f2f2f2;
+}
 
 /* Footer */
 footer.footer {
@@ -107,6 +238,8 @@ footer.footer {
     height: 150px;
     position: sticky;
     bottom: 0;
+    background-color: purple;
+    color: #f2f2f2;
     
 }
 

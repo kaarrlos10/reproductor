@@ -60,6 +60,12 @@
         <section class="bar">
 
             <div class="bar-img">
+                <div class="bar-svg">
+                    <img src="assets/images/home (1).svg" alt="">
+                    <img src="assets/images/search (1).svg" alt="">
+                    <img src="assets/images/heart-filled (1).svg" alt="">
+                    <img src="assets/images/logo biblioteca.svg" alt="">
+                </div>
                 <img src="assets/images/nectar.jpg" alt="">
                 <img src="assets/images/gusymisato.jpg" alt="">
                 <img src="assets/images/rawayana-quien-trae-las-cornetas-portada.jpg" alt="">
@@ -78,31 +84,20 @@
 
         <section class="cuadro">
             <h1>Lista De Reproducción</h1>
-            <div class="track">
+            <div class="track" id="track-list">
                 <div class="song">
                     <img src="assets/images/nectar.jpg" alt="">
                     <ul class="info">
                         <li>Run</li>
                         <li>Joji</li>
                     </ul>
+                   <div class="heart-play">
+                    <img src="assets/images/heart (1).svg" alt="">
+                    <img src="assets/images/player-play-filled (1).svg" alt="">
+                   </div>
                     <p>3:15</p>
                 </div>
-                <div class="song">
-                    <img src="assets/images/nectar.jpg" alt="">
-                    <ul class="info">
-                        <li>Run</li>
-                        <li>Joji</li>
-                    </ul>
-                    <p>3:15</p>
-                </div>
-                <div class="song">
-                    <img src="assets/images/nectar.jpg" alt="">
-                    <ul class="info">
-                        <li>Run</li>
-                        <li>Joji</li>
-                    </ul>
-                    <p>3:15</p>
-                </div>
+              
 
             </div>
             
@@ -113,35 +108,38 @@
 
 
         <section class="cdere">
-            <div>
-                <h2>Lo que estas escuchando</h2>
-                
-                <img src="assets/images/nectar.jpg" alt="">
-                <ul>
-                    <li>Run</li>
-                    <li>Nectar</li>
-                    <li>Joji</li>
-                </ul>
+            <div class="part-right-top">
+                <h2>LO QUE ESTA SONANDO</h2>
+                <div class="part-right-pic">
+                    <img src="assets/images/nectar.jpg" alt="">
+                </div>
+                <div class="part-right-list">
+                    <ul>
+                        <li>Run</li>
+                        <li>Nectar</li>
+                        <li>Joji</li>
+                    </ul>
+                </div>
+                <div class="heart-bottom">
+                    <img src="assets/images/heart (1).svg" alt="" class="heart-bottom">
+                    <img src="assets/images/player-play-filled (1).svg" alt="" class="heart-bottom">
 
-                <img src="" alt="">
-                <img src="" alt="">
+                </div>
+
+               
         
             </div>
-            <div>
+            <div class="part-right-news">
                 <h2>NOVEDADES PARA TI</h2>
                 
                     
-                <div>
+                <div class="pic-arcangel">
                     <img src="assets/images/sentimiento elegancia y mas maldad.jpg" alt="">
-                    <ul>
-                        <li>Sentimiento Elegancia y Más Maldad - Arcangel</li>
-                    </ul>
+                    <p>Sentimiento Elegancia y Más Maldad - Arcangel</p>
                 </div>
-                <div>
+                <div class="pic-drake">
                     <img src="assets/images/Drake_-_Scary_Hours_3.png" alt="">
-                    <ul>
-                        <li>For All The Dogs Scary Hours Edition - Drake</li>
-                    </ul>
+                    <p>For All The Dogs Scary Hours Edition - Drake</p>
                 </div>
                 <img src="assets/" alt="">
                 <img src="assets/" alt="">
@@ -153,11 +151,12 @@
 
 
     <footer class="footer">
-        <img src="assets/images/nectar.jpg" alt="">
+        <img src="assets/images/nectar.jpg" alt="" id="current-song-img">
         <ul>
-            <li>Run</li>
-            <li>Joji</li>
+            <li id="current-song-title">Run</li>
+            <li id="current-song-author">Joji</li>
         </ul>
+        <audio id="current-song-audio" src="" controls></audio>
     </footer>
     <script src="scrip.js"></script>
 </body>
