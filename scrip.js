@@ -1,15 +1,11 @@
 let contenedor = document.querySelector("#track-list")
 console.log(contenedor)
-
-
 axios.get('https://leonardoapi.onrender.com/music')
-
 .then(
     // Callback
     (response) => {
         let canciones = response.data
         canciones.map( (cancion) => {
-
             let componet = document.createElement("div")
             componet.classList.add("song")
             componet.innerHTML = `
@@ -25,28 +21,16 @@ axios.get('https://leonardoapi.onrender.com/music')
             <p>3:15</p>
             `
             componet.addEventListener("click", () => {
-
-
-
                 document.querySelector("#current-song-img")
                 .setAttribute("src", cancion.path.front)
                 document.querySelector("#current-song-audio")
                 .setAttribute("src", cancion.path.audio)
-                document.querySelector("#current-song-title").innerHTML = cancion.title
-                
-                
+                document.querySelector("#current-song-title").innerHTML = cancion.title  
                 document.querySelector("#current-song-author").innerHTML = cancion.author
-                
                 console.log(`Se hizo click en ${cancion.title}`)
-
-                
             })
-            
-
-
             contenedor.appendChild(componet)
      } )
  }
-    
  )
 
