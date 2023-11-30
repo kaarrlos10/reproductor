@@ -18,7 +18,7 @@ axios.get('https://leonardoapi.onrender.com/music')
                     <img src="assets/images/heart (1).svg" alt="">
                     <img src="assets/images/player-play-filled (1).svg" alt="">
                    </div>
-            <p>3:15</p>
+            <p>${cancion.duration}</p>
             `
             componet.addEventListener("click", () => {
                 document.querySelector("#current-song-img")

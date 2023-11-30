@@ -234,7 +234,7 @@ main.main .cdere .part-right-news .pic-drake p{
 footer.footer {
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 120px;
     position: sticky;
     bottom: 0;
     background-color: #42047E;
@@ -262,6 +262,7 @@ footer.footer  img {
     align-items: center;
     gap: .5em;
     padding-bottom: 15px;
+    
 }
 .footer-center .repro-line{
     display: flex;
@@ -270,5 +271,6 @@ footer.footer  img {
 
 .footer-right {
     display: flex;
+    
 }
 
