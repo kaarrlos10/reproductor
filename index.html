@@ -1,138 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
     <title>Reproductor</title>
-     <!-- Viewport -->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Keywords -->
-        <meta name="Keywords" content="MUSICA">
-      <!-- Description -->
-      <meta name="description" content="Description Page">
-      <!-- Author -->
-      <meta name="author" content="Karlos">
-      <!-- language -->
-      <meta name="language" content="es">
-      <!-- theme-color -->
-      <meta name="theme-color" content="#fff">
-      <!-- revised -->
-      <meta name="revised" content="21/10/2023">
-      <!-- title -->
-        <title>REPRODUCTOR</title>
-        <!-- Link Icon -->
-      <link rel="icon" href="assets/images/Drake_-_Scary_Hours_3.png">
-      <link rel="stylesheet" href="styles.css">
-      <!-- Importación de Axios -->
-      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</head>
-<body>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Keywords -->
+    <meta name="Keywords" content="MUSICA" />
+    <!-- Description -->
+    <meta name="description" content="Description Page" />
+    <!-- Author -->
+    <meta name="author" content="Karlos" />
+    <!-- language -->
+    <meta name="language" content="es" />
+    <!-- theme-color -->
+    <meta name="theme-color" content="#fff" />
+    <!-- revised -->
+    <meta name="revised" content="21/10/2023" />
+    <!-- title -->
+    <title>REPRODUCTOR</title>
+    <!-- Link Icon -->
+    <link rel="icon" href="assets/images/Drake_-_Scary_Hours_3.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Importación de Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <nav class="navbar">
-            <img src="assets/images/settings (1).svg" alt="">
-            <button>premiun</button>
-            <img src="assets/images/user-circle (1).svg" alt="">
-        </nav>
+      <nav class="navbar">
+        <img src="assets/images/settings (1).svg" alt="" />
+        <button>premiun</button>
+        <img src="assets/images/user-circle (1).svg" alt="" />
+      </nav>
     </header>
     <main class="main">
-        <section class="line">
-            <div class="bar-img-svg">
-                <div class="bar-svg">
-                    <img src="assets/images/homeverde 1.svg" alt="">
-                    <img src="assets/images/searchverde 1.svg" alt="">
-                    <img src="assets/images/heart-filled (1).svg" alt="">
-                    <img src="assets/images/logo biblioteca.svg" alt="">
-                </div>
-                <div class="bar-img">
-                    <img src="assets/images/nectar.jpg" alt="">
-                    <img src="assets/images/gusymisato.jpg" alt="">
-                    <img src="assets/images/rawayana-quien-trae-las-cornetas-portada.jpg" alt="">
-                    <img src="assets/images/nadie sabe.jpg" alt="">
-                    <img src="assets/images/felicilandia_unnamed-4-scaled.jpg" alt="">
-                    <img src="assets/images/Mor,_No_Le_Temas_A_La_Oscuridad.jpeg" alt="">
-                    <img src="assets/images/after hours.jpg" alt="">
-                    <img src="assets/images/slippery-when-wet.jpg" alt="">
-                    <img src="assets/images/sentimiento elegancia y mas maldad.jpg" alt="">
-                    <img src="assets/images/Drake_-_Scary_Hours_3.png" alt="">
-                    <img src="assets/images/maneskin.jpg" alt="">
-                </div>
+      <section class="line">
+        <div class="bar-img-svg">
+          <div class="bar-svg">
+            <img src="assets/images/homeverde 1.svg" alt="" />
+            <img src="assets/images/searchverde 1.svg" alt="" />
+            <img src="assets/images/heart-filled (1).svg" alt="" />
+            <img src="assets/images/logo biblioteca.svg" alt="" />
+          </div>
+          <div class="bar-img">
+            <img src="assets/images/nectar.jpg" alt="" />
+            <img src="assets/images/gusymisato.jpg" alt="" />
+            <img
+              src="assets/images/rawayana-quien-trae-las-cornetas-portada.jpg"
+              alt=""
+            />
+            <img src="assets/images/nadie sabe.jpg" alt="" />
+            <img src="assets/images/felicilandia_unnamed-4-scaled.jpg" alt="" />
+            <img
+              src="assets/images/Mor,_No_Le_Temas_A_La_Oscuridad.jpeg"
+              alt=""
+            />
+            <img src="assets/images/after hours.jpg" alt="" />
+            <img src="assets/images/slippery-when-wet.jpg" alt="" />
+            <img
+              src="assets/images/sentimiento elegancia y mas maldad.jpg"
+              alt=""
+            />
+            <img src="assets/images/Drake_-_Scary_Hours_3.png" alt="" />
+            <img src="assets/images/maneskin.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="block">
+        <h1>Lista De Reproducción</h1>
+        <div class="track" id="track-list"></div>
+      </section>
+      <section class="cdere">
+        <div class="part-right-top">
+          <h2>LO QUE ESTA SONANDO</h2>
+          <div class="part-right-pic">
+            <img src="assets/images/nectar.jpg" alt="" />
+          </div>
+          <div class="flex">
+            <div class="part-right-list">
+              <ul>
+                <li>Run</li>
+                <li>Nectar</li>
+                <li>Joji</li>
+              </ul>
             </div>
-        </section>
-        <section class="block">
-            <h1>Lista De Reproducción</h1>
-            <div class="track" id="track-list">
+            <div class="heart-bottom">
+              <img
+                src="assets/images/heart (1).svg"
+                alt=""
+                class="heart-bottom"
+              />
+              <img
+                src="assets/images/puntos sus.svg"
+                alt=""
+                class="heart-bottom"
+              />
             </div>
-        </section>
-        <section class="cdere">
-            <div class="part-right-top">
-                <h2>LO QUE ESTA SONANDO</h2>
-                <div class="part-right-pic">
-                    <img src="assets/images/nectar.jpg" alt="">
-                </div>
-                <div class="flex">
-                    <div class="part-right-list">
-                        <ul>
-                            <li>Run</li>
-                            <li>Nectar</li>
-                            <li>Joji</li>
-                        </ul>
-                    </div>
-                    <div class="heart-bottom">
-                        <img src="assets/images/heart (1).svg" alt="" class="heart-bottom">
-                        <img src="assets/images/puntos sus.svg" alt="" class="heart-bottom">
-                    </div>
-                </div>
-            </div>
-            <div class="part-right-news">
-                <h2>NOVEDADES PARA TI</h2>
-                <div class="pic-arcangel">
-                    <img src="assets/images/sentimiento elegancia y mas maldad.jpg" alt="">
-                    <p>Sentimiento Elegancia y Más Maldad - Arcangel</p>
-                </div>
-                <div class="pic-drake">
-                    <img src="assets/images/Drake_-_Scary_Hours_3.png" alt="">
-                    <p>For All The Dogs Scary Hours Edition - Drake</p>
-                </div>
-                <img src="assets/" alt="">
-                <img src="assets/" alt="">
-            </div>
-        </section>
+          </div>
+        </div>
+        <div class="part-right-news">
+          <h2>NOVEDADES PARA TI</h2>
+          <div class="pic-arcangel">
+            <img
+              src="assets/images/sentimiento elegancia y mas maldad.jpg"
+              alt=""
+            />
+            <p>Sentimiento Elegancia y Más Maldad - Arcangel</p>
+          </div>
+          <div class="pic-drake">
+            <img src="assets/images/Drake_-_Scary_Hours_3.png" alt="" />
+            <p>For All The Dogs Scary Hours Edition - Drake</p>
+          </div>
+          <img src="assets/" alt="" />
+          <img src="assets/" alt="" />
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <img src="assets/images/nectar.jpg" alt="" id="current-song-img">
-        <section class="footer-left">
-            <div class="flex">
-                <ul>
-                    <li id="current-song-title">Run</li>
-                    <li id="current-song-author">Joji</li>
-                </ul>
-                <img src="assets/images/heart (1).svg" alt="">
-            </div>
+      <img src="assets/images/nectar.jpg" alt="" id="current-song-img" />
+      <section class="footer-left">
+        <div class="flex">
+          <ul>
+            <li id="current-song-title">Run</li>
+            <li id="current-song-author">Joji</li>
+          </ul>
+          <img src="assets/images/heart (1).svg" alt="" />
+        </div>
+      </section>
+      <section class="space-btw">
+        <section class="footer-center">
+          <div class="pause-play">
+            <img src="assets/images/arrows-shuffle 1.svg" alt="" />
+            <img
+              src="assets/images/player-skip-back-filled verde 1.svg"
+              alt=""
+            />
+            <img
+              id="btn-center"
+              src="assets/images/player-pause-filled verde1.svg"
+              alt=""
+            />
+            <img
+              src="assets/images/player-skip-forward-filled verde 1.svg"
+              alt=""
+            />
+            <img src="assets/images/ciclo.svg" alt="" />
+          </div>
+          <div class="repro-line">
+            <audio id="current-song-audio" src="" controls></audio>
+          </div>
         </section>
-        <section class="space-btw">
-            <section class="footer-center">
-                <div class="pause-play">
-                    <img src="assets/images/arrows-shuffle 1.svg" alt="">
-                    <img src="assets/images/player-skip-back-filled verde 1.svg" alt="">
-                    <img src="assets/images/player-pause-filled verde1.svg" alt="">
-                    <img src="assets/images/player-skip-forward-filled verde 1.svg" alt="">
-                    <img src="assets/images/ciclo.svg" alt="">
-                </div>
-                <div class="repro-line">
-                    <audio id="current-song-audio" src="" controls></audio>  
-                </div>
-            </section>
-            <section class="footer-right">
-                <div class="img-fle">
-                    <img src="assets/images/layout-list 1.svg" alt="">
-                    <img src="assets/images/volume 1.svg" alt="">
-                </div>
-                <div class="audio-f">
-                    <img src="assets/images/Line 11.svg" alt="">
-                </div>
-            </section>
+        <section class="footer-right">
+          <div class="img-fle">
+            <img src="assets/images/layout-list 1.svg" alt="" />
+            <img src="assets/images/volume 1.svg" alt="" />
+          </div>
+          <div class="audio-f">
+            <img src="assets/images/Line 11.svg" alt="" />
+          </div>
         </section>
+      </section>
     </footer>
-    <script src="scrip.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
