@@ -17,8 +17,11 @@ html {
 }
 body {
     overflow-x: hidden;
-    background-image: url("assets/images/vectores\ verdes\ del\ fondo.svg") ;   
-    background-repeat: no-repeat;
+    background-image: url("assets/images/vectores\ verdes\ del\ fondo\ \(1\).svg") ;
+    background-position: 100%;
+    
+    
+    
 }
 img {
    max-width: 100%;  
@@ -74,26 +77,31 @@ main.main .line {
     align-items: center;
     padding: 5px;
 }
+
+.line .bar-img img{
+    height: 60px;
+    width: 60px;
+}
 /* cuadro central */
-main.main .cuadro {
+main.main .block {
     padding: 20px;
     width: 100%;
     background-color: #42047E;
     border-radius: 30px;
 }
-main.main .cuadro h1{
+main.main .block h1{
     font-size: 16pt;
     font-weight: bold;
     color: #f2f2f2;
     padding-bottom: 20px;
 }
-main.main .cuadro .track{
+main.main .block .track{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-main.main .cuadro .track .song {
+main.main .block .track .song {
     color: #f2f2f2;
     border-radius: 30px;
     overflow: hidden;
@@ -105,7 +113,7 @@ main.main .cuadro .track .song {
     justify-content: space-between; */
     background-color: #1A0232;
 }
-main.main .cuadro .track .song img {
+main.main .block .track .song img {
     border-radius: 30px;
     background-color: none;
     height: 100%;
@@ -113,7 +121,7 @@ main.main .cuadro .track .song img {
     object-fit: cover;
     margin-right: 1em;
 }
-main.main .cuadro .track .song .info {
+main.main .block .track .song .info {
     width: 100%;
 }
 .heart-play{
@@ -166,11 +174,11 @@ main.main .cdere .part-right-top .part-right-pic img{
     object-fit: cover;
     border-radius: 30px;
 }
-.flex{
+/* .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 main.main .cdere .part-right-top .part-right-list{
     display: flex;
     flex-direction: column;
@@ -234,43 +242,49 @@ main.main .cdere .part-right-news .pic-drake p{
 footer.footer {
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 150px;
     position: sticky;
     bottom: 0;
     background-color: #42047E;
     color: #f2f2f2;   
     gap: 1em;
 }
+
+
 footer.footer  img {
     height: 100%;
     border-radius: 30px;
 }
-    
-.footer-left .flex{
-    align-items: center;
-    justify-content: space-between;
+
+
+footer.footer .footer-left .flex{
+    display: flex;
     gap: 1em;
 }
-.footer-center{
+
+footer.footer .space-btw{
+    display: flex;
     align-items: center;
+}
+
+.footer-center{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
-.footer-center .pause-play {
+.footer-center .pause-play{
     display: flex;
-    align-items: center;
     gap: .5em;
-    padding-bottom: 15px;
-    
-}
-.footer-center .repro-line{
-    display: flex;
     align-items: center;
 }
-
 .footer-right {
     display: flex;
     
 }
+.footer-right .img-fle{
+    display: flex;
+    align-items: center;
 
+}
