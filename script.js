@@ -1,5 +1,4 @@
 let contenedor = document.querySelector("#track-list");
-console.log(contenedor);
 axios.get("https://leonardoapi.onrender.com/music").then(
   // Callback
   (response) => {
